@@ -1,0 +1,9 @@
+{
+  "welcomeScreen": {
+    "title": "Welcome",
+    "button": "Get started"
+  },
+  "homeScreen": {
+    "title": "Home"
+  }
+}

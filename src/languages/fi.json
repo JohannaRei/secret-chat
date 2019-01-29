@@ -1,0 +1,9 @@
+{
+  "welcomeScreen": {
+    "title": "Tervetuloa",
+    "button": "Aloitetaan"
+  },
+  "homeScreen": {
+    "title": "Koti"
+  }
+}
