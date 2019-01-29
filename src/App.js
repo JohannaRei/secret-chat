@@ -1,17 +1,20 @@
 // @flow
 import React, { Component } from 'react';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import HomeScreen from './screens/HomeScreen';
-import WelcomeScreen from './screens/WelcomeScreen';
+import { HomeScreen, WelcomeScreen, OptionsScreen } from './screens';
 import * as lang from './languages';
 
 const AppNavigator = createStackNavigator(
   {
     Welcome: { screen: WelcomeScreen },
-    Home: { screen: HomeScreen }
+    Home: { screen: HomeScreen },
+    Options: { screen: OptionsScreen }
   },
   {
-    initialRouteName: 'Welcome'
+    initialRouteName: 'Welcome',
+    defaultNavigationOptions: {
+      header: null
+    }
   }
 );
 
