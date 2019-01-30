@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
-import { Screen, Text, Content } from '../components/common';
-import Users from '../stores/Users';
+import { Screen, Text, Content } from '@common';
+import { Users } from '@stores';
 
 // type Props = {};
 

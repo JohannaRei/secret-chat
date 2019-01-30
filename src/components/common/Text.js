@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
 import { Text as RNText, StyleSheet } from 'react-native';
-import type { StyleObj } from 'react-native/Libraries/StyleSheet/StyleSheetTypes';
-import i18n from '../../languages';
+import type { StyleObj } from '@styleObj';
+import i18n from '@lang';
 
 type Props = {
   tx?: string,

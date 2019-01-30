@@ -3,8 +3,8 @@ import React from 'react';
 import {
   TouchableOpacity, View, Text, StyleSheet, Platform
 } from 'react-native';
-import type { StyleObj } from 'react-native/Libraries/StyleSheet/StyleSheetTypes';
-import i18n from '../../languages';
+import type { StyleObj } from '@styleObj';
+import i18n from '@lang';
 
 type Props = {
   onPress: () => void,

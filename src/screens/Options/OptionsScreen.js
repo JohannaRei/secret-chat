@@ -1,5 +1,5 @@
 import React from 'react';
-import { Screen, Content, Text } from '../components/common';
+import { Screen, Content, Text } from '@common';
 
 const OptionsScreen = () => (
   <Screen>

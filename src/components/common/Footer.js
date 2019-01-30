@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import type { StyleObj } from 'react-native/Libraries/StyleSheet/StyleSheetTypes';
+import type { StyleObj } from '@styleObj';
 
 type FooterProps = {
   children: any,

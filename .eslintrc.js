@@ -10,7 +10,8 @@ module.exports = {
     'react/prop-types': 'off',
     'comma-dangle': 'off',
     'react/require-default-props': 'off',
-    'no-param-reassign': 'off'
+    'no-param-reassign': 'off',
+    'import/no-unresolved': 'off'
   },
   globals: {
     fetch: false

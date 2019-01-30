@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import {
   Screen, Button, Text, Footer, Content
-} from '../components/common';
+} from '@common';
 
 type Props = {};
 
