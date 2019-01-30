@@ -22,18 +22,9 @@ const AppContainer = createAppContainer(AppNavigator);
 
 type Props = {};
 
-type State = {
-  loggedIn: boolean
-};
+type State = {};
 
 export default class App extends Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {
-      loggedIn: false
-    };
-  }
-
   componentWillMount() {
     lang.startListener();
   }
