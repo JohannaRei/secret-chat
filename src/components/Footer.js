@@ -14,12 +14,12 @@ const Footer = ({ children, style }: FooterProps) => (
 
 const styles = StyleSheet.create({
   container: {
-    height: 80,
     width: '100%',
     position: 'absolute',
     bottom: 0,
     alignContent: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingHorizontal: 10
   }
 });
 

@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import {
-  Screen, Text, Content, Button, TextInput, Footer
+  Screen, Text, Content, Footer, NewMessageField, Header, ChatHeader
 } from '@comp';
-import { Users, Options } from '@stores';
+import { Users } from '@stores';
 
 type Props = {};
 
@@ -18,39 +18,35 @@ class HomeScreen extends Component<Props> {
     };
   }
 
-  addJohanna = () => {
-    const johq = { username: 'Johanna', password: 'password', nickname: 'johQ' };
-    this.userStore.addUser(johq);
-  };
-
   writeMessage = (text) => {
     this.setState({ currentMessage: text });
   };
 
-  sendMessage = (msg) => {
-    const { messages } = this.state;
-    const newMessages = [...messages, msg];
-    this.setState({ messages: newMessages });
+  sendMessage = () => {
+    const { messages, currentMessage } = this.state;
+    const newMessages = [...messages, currentMessage];
+    this.setState({ messages: newMessages, currentMessage: '' });
   };
 
   render() {
     // const { users } = this.userStore;
-    const { currentMessage } = this.state;
+    const { currentMessage, messages } = this.state;
     return (
       <Screen>
-        <Content>
-          {/* <Text tx="homeScreen.title" />
-          {users.map(user => (
-            <Text key={user.username}>{user.nickname}</Text>
+        <Header>
+          <ChatHeader title="salakaverukset" />
+        </Header>
+        <Content header>
+          {messages.map(message => (
+            <Text>{message}</Text>
           ))}
-          {options.map(option => (
-            <Button title={`${option.name} ${option.active}`} onPress={option.toggle} />
-          ))}
-          <Text>{this.optionStore.activeOptions[0].name}</Text>
-          <Button title="Add Johanna" onPress={this.addJohanna} /> */}
         </Content>
         <Footer>
-          <TextInput value={currentMessage} onChangeText={this.writeMessage} />
+          <NewMessageField
+            value={currentMessage}
+            writeMessage={this.writeMessage}
+            sendMessage={this.sendMessage}
+          />
         </Footer>
       </Screen>
     );

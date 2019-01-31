@@ -10,10 +10,13 @@ const Header = ({ children }: Props) => <View style={styles.container}>{children
 
 const styles = StyleSheet.create({
   container: {
-    height: 80,
+    height: 50,
     width: '100%',
     position: 'absolute',
-    top: 0
+    top: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20
   }
 });
 

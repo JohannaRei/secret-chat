@@ -10,7 +10,7 @@ const TextInput = ({
     autoCorrect={false}
     keyboardAppearance="dark"
     maxLength={maxLength}
-    onBlur={() => validate(name)}
+    onBlur={() => validate && validate(name)}
     secureTextEntry={name === 'password'}
     style={[styles.input, style]}
   />

@@ -62,6 +62,8 @@ PODS:
     - React/RCTBlob
   - RNLanguages (3.0.2):
     - React
+  - RNVectorIcons (6.2.0):
+    - React
   - yoga (0.58.3.React)
 
 DEPENDENCIES:
@@ -85,6 +87,7 @@ DEPENDENCIES:
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
   - RNLanguages (from `../node_modules/react-native-languages`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga/yoga.podspec`)
 
 SPEC REPOS:
@@ -102,6 +105,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native"
   RNLanguages:
     :path: "../node_modules/react-native-languages"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga/yoga.podspec"
 
@@ -112,8 +117,9 @@ SPEC CHECKSUMS:
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 9b873b38b92ed8012d7cdf3b965477095ed364c4
   RNLanguages: e3ae05ef105937645218272429dac0c3f7633451
+  RNVectorIcons: 8c52e1e8da1153613fdef44748e865c25556cb9c
   yoga: 0885622311729a02c2bc02dca97167787a51488b
 
-PODFILE CHECKSUM: 401d9561c4d0a3501d5a5af29ff50e903f00aab5
+PODFILE CHECKSUM: d2d750bc0979c2b632f274a937b427c8ea719c46
 
 COCOAPODS: 1.5.3

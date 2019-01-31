@@ -6,7 +6,9 @@ import Footer from './Footer';
 import Content from './Content';
 import Header from './Header';
 import TextInput from './TextInput';
+import NewMessageField from './NewMessageField';
+import ChatHeader from './ChatHeader';
 
 export {
-  Button, Text, Screen, Footer, Content, Header, TextInput
+  Button, Text, Screen, Footer, Content, Header, TextInput, NewMessageField, ChatHeader
 };

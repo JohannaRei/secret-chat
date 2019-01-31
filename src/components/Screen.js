@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     alignContent: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     backgroundColor: colors.background
   }
 });

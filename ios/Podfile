@@ -27,4 +27,5 @@ target 'salakaverukset' do
     'DevSupport'
   ]
   pod 'RNLanguages', :path => '../node_modules/react-native-languages'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 end
