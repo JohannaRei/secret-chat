@@ -3,6 +3,7 @@ import React from 'react';
 import { Text as RNText, StyleSheet } from 'react-native';
 import type { StyleObj } from '@styleObj';
 import i18n from '@lang';
+import colors from './styles/colors';
 
 type Props = {
   tx?: string,
@@ -17,7 +18,7 @@ const Text = ({ tx, children, style }: Props) => {
 
 const styles = StyleSheet.create({
   text: {
-    color: '#FFF'
+    color: colors.text
   }
 });
 

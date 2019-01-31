@@ -1,5 +1,6 @@
 import React from 'react';
-import { Screen, Content, Text } from '@common';
+import { Screen, Content, Text } from '@comp';
+import { Options } from '@stores';
 
 const OptionsScreen = () => (
   <Screen>

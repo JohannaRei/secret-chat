@@ -2,14 +2,14 @@
 import React, { Component } from 'react';
 import {
   Screen, Button, Text, Footer, Content
-} from '@common';
+} from '@comp';
 
 type Props = {};
 
 class WelcomeScreen extends Component<Props> {
   goHome = () => {
     const { navigation } = this.props;
-    navigation.navigate('Home');
+    navigation.navigate('Signin');
   };
 
   render() {

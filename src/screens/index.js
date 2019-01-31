@@ -1,5 +1,8 @@
-import HomeScreen from '@main/HomeScreen';
-import WelcomeScreen from '@onboard/WelcomeScreen';
-import OptionsScreen from '@options/OptionsScreen';
+import { HomeScreen, SplashScreen } from '@main';
+import { WelcomeScreen } from '@onboard';
+import { OptionsScreen } from '@options';
+import { StartSigninScreen } from '@signin';
 
-export { HomeScreen, WelcomeScreen, OptionsScreen };
+export {
+  SplashScreen, HomeScreen, WelcomeScreen, OptionsScreen, StartSigninScreen
+};

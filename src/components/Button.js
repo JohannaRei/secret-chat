@@ -5,6 +5,7 @@ import {
 } from 'react-native';
 import type { StyleObj } from '@styleObj';
 import i18n from '@lang';
+import colors from './styles/colors';
 
 type Props = {
   onPress: () => void,
@@ -45,10 +46,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: 50,
     width: '90%',
-    backgroundColor: '#C3073F',
+    backgroundColor: colors.button,
     borderRadius: 5
   },
   label: {
+    color: colors.buttonText,
     ...Platform.select({
       android: {
         fontWeight: 'bold'

@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import type { StyleObj } from '@styleObj';
+import colors from './styles/colors';
 
 type ScreenProps = {
   children: any,
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignContent: 'center',
     justifyContent: 'center',
-    backgroundColor: '#1A1A1D'
+    backgroundColor: colors.background
   }
 });
 

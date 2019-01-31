@@ -5,7 +5,8 @@ import Screen from './Screen';
 import Footer from './Footer';
 import Content from './Content';
 import Header from './Header';
+import TextInput from './TextInput';
 
 export {
-  Button, Text, Screen, Footer, Content, Header
+  Button, Text, Screen, Footer, Content, Header, TextInput
 };
