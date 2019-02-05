@@ -16,7 +16,11 @@ class HomeScreen extends Component<Props> {
     this.userStore = Users;
     this.state = {
       currentMessage: '',
-      messages: [],
+      messages: [
+        { id: '1', text: 'Moi', sender: 'johQ' },
+        { id: '2', text: 'Moikka!', sender: 'jokuMuu' },
+        { id: '3', text: '...ok', sender: 'johQ' }
+      ],
       user: ''
     };
   }
@@ -54,7 +58,7 @@ class HomeScreen extends Component<Props> {
   render() {
     console.log(this.state);
     // const { users } = this.userStore;
-    const { currentMessage, messages, user } = this.state;
+    const { currentMessage, messages } = this.state;
     return (
       <Screen>
         <Header>
@@ -65,7 +69,7 @@ class HomeScreen extends Component<Props> {
           />
         </Header>
         <Content header>
-          <ChatArea messages={messages} side={user !== 'johQ' ? 'right' : 'left'} />
+          <ChatArea messages={messages} />
         </Content>
         <Footer>
           <NewMessageField

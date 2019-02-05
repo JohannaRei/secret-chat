@@ -4,9 +4,7 @@ const colors = {
   text: '#fff',
   buttonText: '#000',
   myChatBubble: '#C3073F',
-  yourChatBubble: '#C2B9B0'
+  yourChatBubble: '#E7717D'
 };
-
-// kiva pinkki jotain varte '#E7717D'
 
 export default colors;

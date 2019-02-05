@@ -4,22 +4,33 @@ import Text from './Text';
 import colors from './styles/colors';
 
 const ChatBubble = ({ side, content }) => (
-  <View style={[styles.container, styles[side]]}>
-    <Text style={styles[`${side}Text`]}>{content}</Text>
+  <View style={[styles.container, side === 'right' && styles.containerRight]}>
+    <View style={[styles.bubble, styles[side]]}>
+      <Text style={styles[`${side}Text`]}>{content}</Text>
+    </View>
   </View>
 );
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    width: '90%',
-    padding: 10
+    flexDirection: 'row',
+    marginHorizontal: 30,
+    marginVertical: 10
+  },
+  containerRight: {
+    justifyContent: 'flex-end'
+  },
+  bubble: {
+    padding: 10,
+    borderRadius: 20
   },
   right: {
-    backgroundColor: colors.myChatBubble
+    backgroundColor: colors.myChatBubble,
+    borderTopRightRadius: 0
   },
   left: {
-    backgroundColor: colors.yourChatBubble
+    backgroundColor: colors.yourChatBubble,
+    borderTopLeftRadius: 0
   },
   leftText: {
     color: 'black'
