@@ -19,7 +19,18 @@ class HomeScreen extends Component<Props> {
       messages: [
         { id: '1', text: 'Moi', sender: 'johQ' },
         { id: '2', text: 'Moikka!', sender: 'jokuMuu' },
-        { id: '3', text: '...ok', sender: 'johQ' }
+        {
+          id: '3',
+          text:
+            'Tämä on ihan tosi pitkä viesti joka vaan jatkuu loputtomasti eikö varmastikaan lopu ehkä ikinä ou mai gaad',
+          sender: 'johQ'
+        },
+        {
+          id: '4',
+          text:
+            'Tämä on vielä pidempi viesti koska minulla on niin hirvittävän paljon kerrottavaa kaisesta mitä minulle on elämäni aikana ikinä tapahtunut',
+          sender: 'jokuMuu'
+        }
       ],
       user: ''
     };

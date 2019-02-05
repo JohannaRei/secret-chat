@@ -6,7 +6,7 @@ const ChatArea = ({ messages }) => (
   <FlatList
     data={messages}
     renderItem={({ item }) => (
-      <ChatBubble content={item.text} side={item.sender === 'johQ' ? 'right' : 'left'} />
+      <ChatBubble content={item.text} side={item.sender !== 'johQ' ? 'right' : 'left'} />
     )}
     keyExtractor={item => item.id}
     style={styles.container}

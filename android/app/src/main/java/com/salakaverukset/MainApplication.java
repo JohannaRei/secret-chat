@@ -1,4 +1,4 @@
-package com.salakaverukset;
+package com.johq.salakaverukset;
 
 import android.app.Application;
 

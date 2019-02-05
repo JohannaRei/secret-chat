@@ -2,7 +2,7 @@ import React from 'react';
 import { TextInput as RNTextInput, StyleSheet } from 'react-native';
 
 const TextInput = ({
-  value, onChangeText, style, name, maxLength, validate
+  value, onChangeText, style, name, maxLength, validate, placeholder
 }) => (
   <RNTextInput
     value={value}
@@ -13,6 +13,8 @@ const TextInput = ({
     onBlur={() => validate && validate(name)}
     secureTextEntry={name === 'password'}
     style={[styles.input, style]}
+    placeholder={placeholder}
+    placeholderTextColor="#C2B9B0"
   />
 );
 

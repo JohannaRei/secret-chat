@@ -1,4 +1,4 @@
-package com.salakaverukset;
+package com.johq.salakaverukset;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

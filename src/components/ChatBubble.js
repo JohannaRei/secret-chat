@@ -15,14 +15,16 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     marginHorizontal: 30,
-    marginVertical: 10
+    marginVertical: 7
   },
   containerRight: {
     justifyContent: 'flex-end'
   },
   bubble: {
-    padding: 10,
-    borderRadius: 20
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 20,
+    maxWidth: '90%'
   },
   right: {
     backgroundColor: colors.myChatBubble,
