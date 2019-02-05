@@ -16,7 +16,8 @@ const NewMessageField = ({ value, writeMessage, sendMessage }) => (
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    height: 80
   },
   button: {
     marginLeft: 15

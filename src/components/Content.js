@@ -1,9 +1,7 @@
 // @flow
 import React from 'react';
-import { View, StyleSheet, Dimensions } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { StyleObj } from '@styleObj';
-
-const screenHeight = Dimensions.get('window').height;
 
 const Content = ({
   children,
@@ -24,7 +22,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    padding: 20,
     justifyContent: 'flex-start',
     alignItems: 'center'
   },
@@ -34,7 +31,7 @@ const styles = StyleSheet.create({
   header: {
     position: 'absolute',
     top: 50,
-    height: screenHeight - 50
+    bottom: 80
   }
 });
 

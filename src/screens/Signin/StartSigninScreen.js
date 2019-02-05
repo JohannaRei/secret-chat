@@ -4,6 +4,7 @@ import {
   Screen, Content, Text, Button, Footer, TextInput
 } from '@comp';
 import { validateUsername } from '@utils/validate';
+import { login } from '@utils/storage';
 
 class StartSigninScreen extends Component {
   constructor(props) {
@@ -45,8 +46,10 @@ class StartSigninScreen extends Component {
 
   onSignin = () => {
     const { navigation } = this.props;
+    const { username } = this.state;
     const isValid = this.validate('all');
     if (isValid) {
+      login(username);
       navigation.navigate('Home');
     }
   };
